@@ -9,7 +9,7 @@ object gcd_lcm extends App{
     }
 
     def lcm (a: Int, b: Int): Int = {
-        (a*b)/gcd(a,b)
+        Math.abs(a*b)/gcd(a,b)
     }
 
     println(s"Result of gcd function: ${gcd(81,18)}, should be: $gcdTestResult")
